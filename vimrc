@@ -64,6 +64,9 @@ let g:ycm_confirm_extra_conf=1
 "nerdtree config
 map <C-n> :NERDTreeToggle<CR>
 
+"vim-gitgutter config
+set updatetime=100
+
 " indent folding with manual folds
 augroup vimrc
   au BufReadPre * setlocal foldmethod=indent
