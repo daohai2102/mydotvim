@@ -33,7 +33,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-vinegar'
 
 "track changes
-Plugin 'airblade/vim-gitgutter'
+"Plugin 'airblade/vim-gitgutter'
+Plugin 'chrisbra/changesPlugin'
 
 "Run interactive program (eg: bash) inside vim
 "Plugin 'vim-scripts/Conque-Shell'
