@@ -88,6 +88,10 @@ set tags=tags;/
 "using system clipboard
 set clipboard=unnamedplus
 
+"map F1 to ESC
+map <F1> <Esc>
+imap <F1> <Esc>
+
 set encoding=utf-8
 
 "display absolute line number
