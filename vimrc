@@ -33,11 +33,29 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-vinegar'
 
 "track changes
-"Plugin 'airblade/vim-gitgutter'
-Plugin 'chrisbra/changesPlugin'
+Plugin 'airblade/vim-gitgutter'
+"Plugin 'chrisbra/changesPlugin'
 
 "Run interactive program (eg: bash) inside vim
 "Plugin 'vim-scripts/Conque-Shell'
+
+"R language support
+"Plugin 'jalvesaq/Nvim-R'
+"Plugin 'roxma/nvim-completion-manager'
+"inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+"inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+"Plugin 'gaalcaras/ncm-R'
+""" Vim 8 only
+"if !has('nvim')
+"    Plugin 'roxma/vim-hug-neovim-rpc'
+"endif
+
+"interact with tmux in vim
+Plugin 'benmills/vimux'
+
+"fuzzy find
+set rtp+=~/.fzf
+Plugin 'junegunn/fzf.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -87,6 +105,9 @@ set tags=tags;/
 
 "using system clipboard
 set clipboard=unnamedplus
+
+"set tab indicator
+set list lcs=tab:\|\ 
 
 "map F1 to ESC
 map <F1> <Esc>
