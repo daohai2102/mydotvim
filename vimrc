@@ -17,6 +17,10 @@ Plugin 'Raimondi/delimitMate'
 
 "theme
 Plugin 'morhetz/gruvbox'
+Plugin 'dracula/vim'
+Plugin 'koirand/tokyo-metro.vim'
+Plugin 'szorfein/fantasy.vim'
+Plugin 'szorfein/fromthehell.vim'
 
 "auto completion
 Plugin 'Valloric/YouCompleteMe'
@@ -36,11 +40,14 @@ Plugin 'tpope/vim-vinegar'
 Plugin 'airblade/vim-gitgutter'
 "Plugin 'chrisbra/changesPlugin'
 
+"Latex
+Plugin 'xuhdev/vim-latex-live-preview'
+
 "Run interactive program (eg: bash) inside vim
 "Plugin 'vim-scripts/Conque-Shell'
 
 "R language support
-"Plugin 'jalvesaq/Nvim-R'
+Plugin 'jalvesaq/Nvim-R'
 "Plugin 'roxma/nvim-completion-manager'
 "inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 "inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
@@ -64,6 +71,11 @@ filetype plugin indent on    " required
 "vim-airline config
 "Automatically displays all buffers when there's only one tab open.
 let g:airline#extensions#tabline#enabled = 1
+
+"Latex config
+autocmd Filetype tex setl updatetime=1
+let g:livepreview_previewer='evince'
+let g:livepreview_cursorhold_recompile=0
 
 "tagbar config
 nmap <F8> :TagbarToggle<CR>
@@ -98,7 +110,8 @@ set foldcolumn=3
 set tags=tags;/
 
 " " Set colorscheme
- colorscheme gruvbox
+colorscheme tokyo-metro
+"colorscheme gruvbox
 
 " " Set dark background
  set background=dark
@@ -256,8 +269,4 @@ function! SummarizeTabs()
     echohl None
   endtry
 endfunction
-
-
-
-
 
