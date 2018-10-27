@@ -270,3 +270,9 @@ function! SummarizeTabs()
   endtry
 endfunction
 
+"move up/down in a wrapped line
+:nmap j gj
+:nmap k gk
+
+set dir=~/.vim/swap//,/tmp//
+set backupdir=~/.vim/backup//,/tmp//
