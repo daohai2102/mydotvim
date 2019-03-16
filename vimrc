@@ -91,6 +91,8 @@ let g:ycm_server_python_interpreter = '/usr/bin/python'
 let g:ycm_autoclose_preview_window_after_insertion=1
 "confirm extra_conf just once
 let g:ycm_confirm_extra_conf=1
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+"let g:ycm_max_diagnostics_to_display=0
 
 "nerdtree config
 map <C-n> :NERDTreeToggle<CR>
@@ -175,6 +177,7 @@ if has("vms")
 else
   set backup		" keep a backup file (restore to previous version)
   set undofile		" keep an undo file (undo changes after closing)
+  set undodir=$HOME/.vim/undo
 endif
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
@@ -185,6 +188,9 @@ set incsearch		" do incremental searching
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
 inoremap <c-w> <c-g>u<c-w>
+
+nmap <C-j> <C-e>
+nmap <C-k> <C-y>
 
 
 
